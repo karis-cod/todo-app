@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(235, 21%, 11%);
+}
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
+.background-img{
+    width: 100%;
+    height: 35vh;
+}
+.todo-con{
+    position: absolute;
+    top: 18%;
+    right: 30%;
+}
+h1{
+    color: white;
+    margin-bottom: 20px;
+}
+#inp{
+    background:hsl(235, 24%, 19%);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    width: 350px;
+}
+#inp:active{
+    background:hsl(235, 24%, 19%) ;
+}
+#date{
+    background:hsl(235, 24%, 19%);
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    width: 160px;
+}
+.addtodo{
+    padding: 10px 20px;
+    background-color: hsl(235, 24%, 19%);
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.addtodo:hover{
+    background: hsl(237, 13%, 32%);;
+}
+.del{
+    background-color: hsl(235, 24%, 19%);
+    color: white;
+    border: none;
+    position: absolute;
+    right: 0px;
+    padding: 5px 14px;
+}
+.del:hover{
+    background: hsl(237, 13%, 32%);;
+}
+.todo-ul{
+    margin-top: 25px;
+    margin-left: 15px;
+}
+.todo-li{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.lispn{
+    position: absolute;
+    right: 120px;
+}
