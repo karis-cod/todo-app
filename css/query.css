@@ -7,17 +7,37 @@
 }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 590px) {
   .todo-con{
     margin-left: 20px;
+    margin-right: 10px;
     position: relative;
     left: 0px;
   }
+  .rap{
+    display: block;
+    margin-bottom: 30px;
+  }
 }
-/* /*MD-SMALL LAPTOP:>1200PX 
-@media (max-width:75rem) {
-    html{
-        font-size:36.25% ;
-    }
-    
-} */
+
+@media (max-width: 400px) {
+  #inp{
+    position: relative;
+    right: 15px;
+    width: 100px;
+  }
+  #inp{
+    margin-bottom: 5px;
+  }
+  #date{
+    margin-bottom: 8px;    
+  }
+  .rap{
+    display: block;
+    position: relative;
+    left: 50px;
+  }
+  .lispn{
+    left: -50px;
+}
+}
