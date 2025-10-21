@@ -1,43 +1,65 @@
-@media  (max-width:900px) {
-  .todo-con{
-    margin-left:50px ;
+@media (max-width: 2500px) {
+  ul{
+    margin-right: 50px;
+  }
+   #inp{
+    width: 700px;
+   }
+  .rap{
+    display: block;
+    position: relative;
+    left: 10px;
+  }
 }
-#inp{
-  margin-bottom: 10px;
-}
+@media  (max-width:1000px) {
+  #date{
+    margin-left: 20px;
+  }
+   #inp{
+    margin-left: 20px;
+    width: 600px;
+   }
+  .rap{
+    display: block;
+    position: relative;
+    left: 10px;
+  }
+  ul{
+    margin-right: 40px;
+  }
 }
 
-@media (max-width: 590px) {
-  .todo-con{
+@media (max-width: 650px) {
+   #inp{
     margin-left: 20px;
-    margin-right: 10px;
+    width: 400px;
+   }
+  .rap{
+    display: block;
     position: relative;
-    left: 0px;
+    left: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  li{
+    padding-bottom: 5px;
+  }
+
+  #inp{
+    width: 280px;
+    margin-bottom: 4px;
+    margin-left: 2px;
   }
   .rap{
     display: block;
-    margin-bottom: 30px;
-  }
-}
-
-@media (max-width: 400px) {
-  #inp{
     position: relative;
-    right: 15px;
-    width: 100px;
+    left: 10px;
   }
-  #inp{
-    margin-bottom: 5px;
+  ul{
+    margin: auto;
   }
   #date{
-    margin-bottom: 8px;    
+    margin: auto;
   }
-  .rap{
-    display: block;
-    position: relative;
-    left: 50px;
-  }
-  .lispn{
-    left: -50px;
-}
 }
