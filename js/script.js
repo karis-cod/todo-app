@@ -17,10 +17,17 @@ function renderTodo() {
     const todoObj = todolist[i];
     const {name, duedate, time} = todoObj
     const html = `
-      <li class="todo-li"> ${name}<span class="rap"><span class="datt">${duedate} </span> ${time}
-      <button onclick="
-      todolist.splice(${i},1); renderTodo(); saveTodo();"
-      class="del">Delete</button></span></li>
+      <li class="todo-li"><span class="elilipsis-link">${name} </span><span class="rap">
+       <span class="datt">
+        ${duedate} 
+        </span>
+         ${time}
+         <button onclick="
+           todolist.splice(${i},1); renderTodo(); saveTodo();"
+                class="del">Delete 
+         </button>
+        </span>
+      </li>
     `;
 
     todolistHTML += html
@@ -57,4 +64,4 @@ addTodoEle.addEventListener('click', () =>{
 
  formTodoEle.addEventListener('submit', (event) => {
   event.preventDefault()
-});
+}); 

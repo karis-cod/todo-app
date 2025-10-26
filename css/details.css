@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(235, 21%, 11%);
+    margin: 7% 5% 1% 1%;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+label{
+    color: white;
+}
+.background-img{
+    display: block;
+    width: 100%;
+    height: 35vh;
+}
+.del{
+    background-color: hsl(235, 24%, 19%);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+}
+.del:hover{
+    background: hsl(237, 13%, 32%);;
+}
+.todo-li{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-bottom: 0.2px solid white;
+    position: relative;
+    left: 8px;
+    list-style: none;
+}
+.Home-btn{
+  position: fixed;
+  right: 5%;
+  bottom: 4%;
+  z-index: 99;
+  padding: 15px 10px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 17px;
+  box-shadow: 3px 3px 15px 3px wheat;
+}
+.rap{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px 5px 15px 5px;
+}

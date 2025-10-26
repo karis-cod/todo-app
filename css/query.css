@@ -10,6 +10,10 @@
     position: relative;
     left: 10px;
   }
+  .elilipsis-link{
+    display: block;
+    width: 800px;
+ }
 }
 @media  (max-width:1000px) {
   #date{
@@ -20,13 +24,15 @@
     width: 600px;
    }
   .rap{
-    display: block;
-    position: relative;
-    left: 10px;
+    margin-right: 300px;
   }
   ul{
     margin-right: 40px;
   }
+  .elilipsis-link{
+    display: block;
+    width: 400px;
+ }
 }
 
 @media (max-width: 650px) {
@@ -35,13 +41,21 @@
     width: 400px;
    }
   .rap{
-    display: block;
-    position: relative;
-    left: 10px;
+    margin-left: 100px;
   }
+  .elilipsis-link{
+    display: block;
+    width: 400px;
+ }
+
 }
 
+
 @media (max-width: 450px) {
+  .elilipsis-link{
+    display: block;
+    width: 240px;
+ }
   li{
     padding-bottom: 5px;
   }
@@ -61,5 +75,20 @@
   }
   #date{
     margin: auto;
+  }
+  .Details-btn{
+    left: 10px;
+  }
+  .Home-btn{
+    left: 10px;
+  }
+  .datim{
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .addtodo{
+    margin-left: 20px;
+    margin-bottom: 10px;
   }
 }

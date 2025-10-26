@@ -1,0 +1,8 @@
+@media (max-width: 450px) {
+  ul{
+    margin: auto;
+  }
+  .Home-btn{
+    left: 10px;
+  }
+}
