@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: auto;
+}
 body{
     background: hsl(235, 21%, 11%);
     margin: 7% 5% 1% 1%;
