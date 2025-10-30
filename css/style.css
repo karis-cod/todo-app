@@ -5,6 +5,7 @@
 }
 body{
     background: hsl(235, 21%, 11%);
+    margin: 1px;
 }
 .container{
     max-width: 1400px;
