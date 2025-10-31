@@ -5,12 +5,23 @@ const formTodoEle = document.querySelector('.todo-form');
 const dateTodoEle = document.querySelector('#date');
 const timeTodoEle = document.querySelector('#time');
 const liTodoEle = document.querySelector('.todo-li');
-
-
+ 
 todolist = JSON.parse(localStorage.getItem("todolist")) || [];
 
-renderTodo()
+function dateTimestamp() {
+const today = new Date();
+const yyyy = today.getFullYear();
+const mm = String(today.getMonth() + 1).padStart(2, '0');
+const dd = String(today.getDate()).padStart(2, '0');
+const todayStr = `${yyyy}-${mm}-${dd}`;
 
+if (dateTodoEle) {
+  dateTodoEle.min = todayStr; 
+}
+}
+dateTimestamp()
+
+renderTodo()
 function renderTodo() {
   let todolistHTML = '';
   for (let i = 0; i < todolist.length; i++) {
@@ -64,4 +75,51 @@ addTodoEle.addEventListener('click', () =>{
 
  formTodoEle.addEventListener('submit', (event) => {
   event.preventDefault()
-}); 
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  formTodoEle.addEventListener('submit', (e) => {
+  e.preventDefault()
+
+  liTodoEle.textContent = '';
+  const vall = dateTodoEle.vall;
+  if (!vall) {
+    liTodoEle.textContent = 'you cannot pick a past date.';
+    return;
+  }
+
+  liTodoEle.style.color = 'green';
+  liTodoEle.textContent = 'good - date accepted:' + vall;
+});  */
+
+/* dateTodoEle.addEventListener('input', () => {
+  liTodoEle.style.color = 'red';
+  const vv = dateTodoEle.value;
+  if (!vv) {
+    liTodoEle.textContent = '';
+    return;
+  }
+  if (new Date(vv).setHours(0,0,0,0) < new Date().setHours(0,0,0,0)) {
+    liTodoEle.textContent = 'that is a past date';
+  } else {
+    liTodoEle.textContent = '';
+  }
+});
+
+ */
