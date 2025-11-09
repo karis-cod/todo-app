@@ -62,13 +62,7 @@ addTodoEle.addEventListener('click', () =>{
     renderTodo();    
   }
   else{
-    const name = 'description ERROR!!!';
-    const duedate = '';
-    const time = '';
-    todolist.push({name,duedate,time});
-    inpEle.value = '';
-    saveTodo();
-    renderTodo(); 
+
   }
 
 });
